@@ -11,6 +11,8 @@
 #import <WeexSDK/WXResourceLoader.h>
 #import <WeexSDK/WXUtility.h>
 
+#import <WeexPluginLoader/WeexPluginLoader.h>
+
 @interface WeexSVGImageView : SVGKFastImageView
 
 @property (nonatomic, strong) NSURL *url;
@@ -98,6 +100,8 @@
 @end
 
 @implementation WeexSVGComponent
+
+WX_PlUGIN_EXPORT_COMPONENT(svg, WeexSVGComponent)
 
 - (instancetype)initWithRef:(NSString *)ref type:(NSString *)type styles:(NSDictionary *)styles attributes:(NSDictionary *)attributes events:(NSArray *)events weexInstance:(WXSDKInstance *)weexInstance {
     self = [super initWithRef:ref type:type styles:styles attributes:attributes events:events weexInstance:weexInstance];
