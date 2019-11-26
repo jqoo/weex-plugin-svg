@@ -1,19 +1,19 @@
 /* globals alert */
-const weexSvg = {
+const weexPluginSvg = {
   show () {
-    alert('Module weexSvg is created sucessfully ');
+    alert('Module weexPluginSvg is created sucessfully ');
   }
 };
 
 const meta = {
-  weexSvg: [{
+  weexPluginSvg: [{
     lowerCamelCaseName: 'show',
     args: []
   }]
 };
 
 function init (weex) {
-  weex.registerModule('weexSvg', weexSvg, meta);
+  weex.registerModule('weexPluginSvg', weexPluginSvg, meta);
 }
 
 export default {

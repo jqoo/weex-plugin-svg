@@ -7,7 +7,7 @@ def common
 	pod 'WeexPluginLoader'
 end
 
-target 'WeexSvg' do
+target 'WeexPluginSvg' do
     common
 end
 
